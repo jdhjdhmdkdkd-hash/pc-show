@@ -1,109 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>PC Show - PC Diagnostic Tool</title>
+    <title>PC Show - Professional PC Diagnostic Tool</title>
+
+    <meta name="description"
+        content="PC Show is a professional Windows PC diagnostic tool. Test CPU, RAM, Storage, GPU, Camera, Microphone, USB and Internet performance.">
+
+    <meta name="keywords"
+        content="PC Show, PC diagnostic tool, PC testing software, Windows PC test, CPU test, RAM test, GPU test">
+
+    <meta name="author" content="PC Show">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical"
+        href="https://jdhjdhmdkdkd-hash.github.io/pc-show/">
+
+    <!-- Social Media Preview -->
+    <meta property="og:title"
+        content="PC Show - Professional PC Diagnostic Tool">
+
+    <meta property="og:description"
+        content="Test your Windows PC with CPU, RAM, Storage, GPU, Camera, Microphone, USB and Internet diagnostics.">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:url"
+        content="https://jdhjdhmdkdkd-hash.github.io/pc-show/">
 
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         body {
-            background: #0b0f19;
+            background:
+                radial-gradient(circle at top, #162447 0%, #080b14 45%, #05060a 100%);
             color: white;
             min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
-        .container {
-            text-align: center;
-            max-width: 850px;
-            padding: 50px 25px;
+        header {
+            width: 100%;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
         }
 
         .logo {
-            font-size: 60px;
-            font-weight: bold;
-            color: #4da6ff;
-            margin-bottom: 15px;
+            font-size: 28px;
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: #00e5ff;
+        }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #00e5ff;
+        }
+
+        .hero {
+            max-width: 1100px;
+            margin: auto;
+            padding: 100px 20px 70px;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 18px;
+            border-radius: 30px;
+            background: rgba(0, 229, 255, 0.1);
+            border: 1px solid rgba(0, 229, 255, 0.4);
+            color: #00e5ff;
+            font-size: 14px;
+            margin-bottom: 25px;
         }
 
         h1 {
-            font-size: 42px;
-            margin-bottom: 15px;
+            font-size: clamp(45px, 7vw, 80px);
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 25px;
         }
 
-        .version {
-            color: #4da6ff;
-            margin-bottom: 20px;
+        h1 span {
+            color: #00e5ff;
         }
 
-        .description {
-            color: #aeb7c6;
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            color: #b8becb;
             font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+
+        .buttons {
+            margin-top: 35px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
         }
 
         .download {
             display: inline-block;
-            background: #1677ff;
-            color: white;
+            padding: 16px 30px;
+            background: #00e5ff;
+            color: #001014;
             text-decoration: none;
-            padding: 17px 35px;
             border-radius: 10px;
-            font-size: 19px;
-            font-weight: bold;
-            transition: 0.2s;
+            font-weight: 800;
+            font-size: 16px;
+            transition: 0.3s;
+            box-shadow: 0 0 30px rgba(0, 229, 255, 0.2);
         }
 
         .download:hover {
-            background: #0d5ed7;
-            transform: translateY(-2px);
+            transform: translateY(-3px);
+            box-shadow: 0 0 40px rgba(0, 229, 255, 0.5);
+        }
+
+        .github {
+            display: inline-block;
+            padding: 16px 30px;
+            border: 1px solid #333b4d;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .github:hover {
+            border-color: #00e5ff;
+            color: #00e5ff;
         }
 
         .features {
-            margin-top: 45px;
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px 100px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #8f96a5;
+        }
+
+        .grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
         }
 
-        .feature {
-            background: #151b29;
-            padding: 22px;
-            border-radius: 12px;
+        .card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 18px;
+            padding: 28px 20px;
+            transition: 0.3s;
         }
 
-        .feature h3 {
-            margin-bottom: 8px;
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(0, 229, 255, 0.5);
+            background: rgba(0, 229, 255, 0.06);
         }
 
-        .feature p {
-            color: #aeb7c6;
+        .icon {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 19px;
+        }
+
+        .card p {
+            color: #949bab;
+            line-height: 1.6;
             font-size: 14px;
-            line-height: 1.5;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            padding: 20px 20px 100px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            color: #aeb4c1;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .download-section {
+            max-width: 900px;
+            margin: 0 auto 100px;
+            padding: 50px 25px;
+            text-align: center;
+            border-radius: 25px;
+            background: linear-gradient(
+                135deg,
+                rgba(0, 229, 255, 0.12),
+                rgba(255, 255, 255, 0.03)
+            );
+            border: 1px solid rgba(0, 229, 255, 0.2);
+        }
+
+        .download-section h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .download-section p {
+            color: #9fa6b5;
+            margin-bottom: 25px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            color: #777f90;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: #00e5ff;
+        }
+
+        @media (max-width: 900px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         @media (max-width: 600px) {
-            h1 {
-                font-size: 30px;
+            header {
+                padding: 20px;
             }
 
-            .logo {
-                font-size: 45px;
+            nav {
+                display: none;
             }
 
-            .features {
+            .hero {
+                padding-top: 70px;
+            }
+
+            .grid {
                 grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 50px;
+            }
+
+            .hero p {
+                font-size: 16px;
             }
         }
     </style>
@@ -111,60 +304,166 @@
 
 <body>
 
-    <div class="container">
-
-        <div class="logo">PC SHOW</div>
-
-        <h1>Professional PC Diagnostic Tool</h1>
-
-        <div class="version">
-            Version 1.0.0
+    <header>
+        <div class="logo">
+            PC <span>SHOW</span>
         </div>
 
-        <p class="description">
-            Check your CPU, RAM, Storage, GPU, Camera, Microphone,
-            USB devices, Internet and more from one powerful application.
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="#download">Download</a>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+
+        <div class="badge">
+            ⚡ Windows PC Diagnostic Tool
+        </div>
+
+        <h1>
+            Check Your PC<br>
+            <span>Like a Pro.</span>
+        </h1>
+
+        <p>
+            PC Show is a powerful Windows PC diagnostic and testing
+            application that helps you check CPU, RAM, Storage, GPU,
+            Camera, Microphone, USB, Internet and more.
         </p>
 
-        <a
-    class="download"
-    href="https://github.com/jdhjdhmdkdkd-hash/pc-show/releases/download/v1.0.0/PC_Show_Setup.exe"
-    download>
-    ⬇ Download PC Show
-</a>
-        <div class="features">
+        <div class="buttons">
 
-            <div class="feature">
-                <h3>🖥️ PC Diagnostic</h3>
+            <a class="download"
+                href="https://github.com/jdhjdhmdkdkd-hash/pc-show/releases/download/v1.0.0/PC_Show_Setup.exe">
+                ⬇ Download PC Show
+            </a>
+
+            <a class="github"
+                href="https://github.com/jdhjdhmdkdkd-hash/pc-show"
+                target="_blank">
+                ⭐ GitHub
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="features" id="features">
+
+        <div class="section-title">
+            <h2>Powerful Features</h2>
+            <p>Everything you need to check your PC.</p>
+        </div>
+
+        <div class="grid">
+
+            <div class="card">
+                <div class="icon">🧠</div>
+                <h3>CPU Test</h3>
                 <p>
-                    Check important PC hardware and system information.
+                    Check CPU information and run a basic CPU benchmark.
                 </p>
             </div>
 
-            <div class="feature">
-                <h3>⚡ Performance Tests</h3>
+            <div class="card">
+                <div class="icon">💾</div>
+                <h3>RAM Test</h3>
                 <p>
-                    Test CPU, RAM, Disk and Graphics performance.
+                    Check your system memory and monitor RAM usage.
                 </p>
             </div>
 
-            <div class="feature">
-                <h3>🎤 Hardware Tests</h3>
+            <div class="card">
+                <div class="icon">⚡</div>
+                <h3>Disk Speed</h3>
                 <p>
-                    Test microphone, speaker, camera, keyboard and mouse.
+                    Perform a basic storage read and write speed test.
                 </p>
             </div>
 
-            <div class="feature">
-                <h3>🌐 Internet Test</h3>
+            <div class="card">
+                <div class="icon">🎮</div>
+                <h3>GPU Test</h3>
                 <p>
-                    Check internet connection and network status.
+                    Run a graphics test and check your GPU information.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌡️</div>
+                <h3>Temperature</h3>
+                <p>
+                    Monitor available CPU and system temperature sensors.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📷</div>
+                <h3>Camera Test</h3>
+                <p>
+                    Quickly test whether your PC camera is working.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎤</div>
+                <h3>Microphone</h3>
+                <p>
+                    Check your microphone input level in real time.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌐</div>
+                <h3>Internet Test</h3>
+                <p>
+                    Check your internet connection and network status.
                 </p>
             </div>
 
         </div>
 
-    </div>
+    </section>
+
+
+    <section class="about" id="about">
+
+        <h2>About PC Show</h2>
+
+        <p>
+            PC Show is designed to make PC diagnostics simple.
+            Instead of checking different Windows tools one by one,
+            PC Show brings useful hardware and system tests together
+            in one easy-to-use application.
+        </p>
+
+    </section>
+
+
+    <section class="download-section" id="download">
+
+        <h2>Ready to Check Your PC?</h2>
+
+        <p>
+            Download PC Show and start testing your Windows PC today.
+        </p>
+
+        <a class="download"
+            href="https://github.com/jdhjdhmdkdkd-hash/pc-show/releases/download/v1.0.0/PC_Show_Setup.exe">
+            ⬇ Download PC Show
+        </a>
+
+    </section>
+
+
+    <footer>
+        © 2026 <span>PC Show</span>. All Rights Reserved.
+    </footer>
 
 </body>
+
 </html>
