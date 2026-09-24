@@ -19,14 +19,14 @@
             color: white;
             min-height: 100vh;
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
         }
 
         .container {
             text-align: center;
-            max-width: 800px;
-            padding: 40px;
+            max-width: 850px;
+            padding: 50px 25px;
         }
 
         .logo {
@@ -41,7 +41,12 @@
             margin-bottom: 15px;
         }
 
-        p {
+        .version {
+            color: #4da6ff;
+            margin-bottom: 20px;
+        }
+
+        .description {
             color: #aeb7c6;
             font-size: 18px;
             line-height: 1.6;
@@ -53,9 +58,9 @@
             background: #1677ff;
             color: white;
             text-decoration: none;
-            padding: 16px 32px;
+            padding: 17px 35px;
             border-radius: 10px;
-            font-size: 18px;
+            font-size: 19px;
             font-weight: bold;
             transition: 0.2s;
         }
@@ -74,7 +79,7 @@
 
         .feature {
             background: #151b29;
-            padding: 20px;
+            padding: 22px;
             border-radius: 12px;
         }
 
@@ -83,8 +88,23 @@
         }
 
         .feature p {
+            color: #aeb7c6;
             font-size: 14px;
-            margin: 0;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            .logo {
+                font-size: 45px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -97,12 +117,19 @@
 
         <h1>Professional PC Diagnostic Tool</h1>
 
-        <p>
+        <div class="version">
+            Version 1.0.0
+        </div>
+
+        <p class="description">
             Check your CPU, RAM, Storage, GPU, Camera, Microphone,
             USB devices, Internet and more from one powerful application.
         </p>
 
-        <a class="download" href="PC_Show_Setup.exe" download>
+        <a
+            class="download"
+            href="https://github.com/jdhjdhmdkdkd-hash/pc-show/releases/tag/v1.0.0"
+            target="_blank">
             ⬇ Download PC Show
         </a>
 
@@ -110,22 +137,30 @@
 
             <div class="feature">
                 <h3>🖥️ PC Diagnostic</h3>
-                <p>Check important PC hardware and system information.</p>
+                <p>
+                    Check important PC hardware and system information.
+                </p>
             </div>
 
             <div class="feature">
                 <h3>⚡ Performance Tests</h3>
-                <p>Test CPU, RAM, Disk and Graphics performance.</p>
+                <p>
+                    Test CPU, RAM, Disk and Graphics performance.
+                </p>
             </div>
 
             <div class="feature">
                 <h3>🎤 Hardware Tests</h3>
-                <p>Test microphone, speaker, camera, keyboard and mouse.</p>
+                <p>
+                    Test microphone, speaker, camera, keyboard and mouse.
+                </p>
             </div>
 
             <div class="feature">
                 <h3>🌐 Internet Test</h3>
-                <p>Check internet connection and network status.</p>
+                <p>
+                    Check internet connection and network status.
+                </p>
             </div>
 
         </div>
