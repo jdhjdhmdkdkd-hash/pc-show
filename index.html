@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PC Show - PC Diagnostic Tool</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0b0f19;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 800px;
+            padding: 40px;
+        }
+
+        .logo {
+            font-size: 60px;
+            font-weight: bold;
+            color: #4da6ff;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #aeb7c6;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .download {
+            display: inline-block;
+            background: #1677ff;
+            color: white;
+            text-decoration: none;
+            padding: 16px 32px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .download:hover {
+            background: #0d5ed7;
+            transform: translateY(-2px);
+        }
+
+        .features {
+            margin-top: 45px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .feature {
+            background: #151b29;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .feature h3 {
+            margin-bottom: 8px;
+        }
+
+        .feature p {
+            font-size: 14px;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="logo">PC SHOW</div>
+
+        <h1>Professional PC Diagnostic Tool</h1>
+
+        <p>
+            Check your CPU, RAM, Storage, GPU, Camera, Microphone,
+            USB devices, Internet and more from one powerful application.
+        </p>
+
+        <a class="download" href="PC_Show_Setup.exe" download>
+            ⬇ Download PC Show
+        </a>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>🖥️ PC Diagnostic</h3>
+                <p>Check important PC hardware and system information.</p>
+            </div>
+
+            <div class="feature">
+                <h3>⚡ Performance Tests</h3>
+                <p>Test CPU, RAM, Disk and Graphics performance.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🎤 Hardware Tests</h3>
+                <p>Test microphone, speaker, camera, keyboard and mouse.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🌐 Internet Test</h3>
+                <p>Check internet connection and network status.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
